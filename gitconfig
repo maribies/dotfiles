@@ -1,8 +1,7 @@
 [user]
-  username         = JoshCheek
-	name             = Josh Cheek
-	email            = josh.cheek@gmail.com
-  signingkey       = A434B9B967222899
+  username         = maribies
+	name             = Marissa Biescker
+	email            = marissa.biesecker@gmail.com
 [color]
   ui               = true
 [color "diff"]
@@ -19,14 +18,10 @@
   default          = upstream
 [core]
   excludesfile     = ~/.gitignore
-  editor           = vim
-[merge]
-  conflictstyle    = diff3
+  editor           = code --wait
 [status]
   submodulesummary = true
   relativePaths    = true
-[commit]
-  gpgsign          = true
 [filter "lfs"]
   clean            = git-lfs clean -- %f
   smudge           = git-lfs smudge -- %f
