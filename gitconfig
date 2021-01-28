@@ -38,6 +38,11 @@
     shas     = log --pretty=format:\"%H\"
     hist     = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
 
+  # commit with a wip message
+    wip      = commit -m"WIP"
+  # undo last commit (hopefully which was a wip)
+    unwip    = reset --soft HEAD^
+
   # Branches
     # --all gives local and remote, --verbose 1x shows 1st line of log, 2x: show upstream branch
     br       = branch --all --verbose --verbose
