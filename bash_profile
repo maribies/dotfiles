@@ -3,8 +3,12 @@ if [[ -e "$HOME/.bashrc" ]]; then
 fi
 
 # Environment Variables
-  export EDITOR='vim'
-  export PATH="$HOME/bin:$HOME/code/dotfiles/bin:$HOME/miniconda2/bin:$HOME/.cargo/bin:$PATH"
+  export EDITOR='code --wait'
+  export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+  export PATH="$HOME/.nvm/versions/node/v10.13.0/bin:$PATH"
+  export PATH="$HOME/.rbenv/shims:$PATH"
+  export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+  export PATH="$HOME/bin:$HOME/Desktop/Marissa/Projects/dotfiles/bin:$HOME/.cargo/bin:$PATH"
   export BAT_THEME=TwoDark # https://github.com/sharkdp/bat
 
 # tab completion
@@ -127,3 +131,29 @@ fi
   }
 
   PROMPT_COMMAND='build_mah_prompt'
+
+# Enable tab completion
+source ~/.udacity-terminal-config/git-completion.bash
+
+# Change command prompt
+source ~/.udacity-terminal-config/git-prompt.sh
+
+# colors!
+red="\[\033[38;5;203m\]"
+green="\[\033[38;05;38m\]"
+blue="\[\033[0;34m\]"
+reset="\[\033[0m\]"
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+# export PS1="$red\u$green\$(__git_ps1)$blue \W
+# $ $reset"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(rbenv init -)"
