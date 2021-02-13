@@ -39,9 +39,10 @@
     hist     = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
 
   # commit with a wip message
-    wip      = commit -m"WIP"
+    wip      = git commit -am"WIP"
   # undo last commit (hopefully which was a wip)
-    unwip    = reset --soft HEAD^
+    unwip-s  = reset --soft HEAD^ #keeps changes in staging
+    unwip    = reset HEAD^
 
   # Branches
     # --all gives local and remote, --verbose 1x shows 1st line of log, 2x: show upstream branch
