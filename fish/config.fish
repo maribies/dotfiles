@@ -111,3 +111,9 @@ maybe_source $HOME/.config/fish/private_config.fish
 
 # Bat (a better cat) https://github.com/sharkdp/bat
 set -x BAT_THEME TwoDark
+
+# Open things with code editor
+function code
+  set location "$PWD/$argv"
+  open -n -b "com.microsoft.VSCode" --args $location
+end
