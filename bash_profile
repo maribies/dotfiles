@@ -9,6 +9,7 @@ fi
   export PATH="$HOME/.rbenv/shims:$PATH"
   export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
   export PATH="$HOME/bin:$HOME/Desktop/Marissa/Projects/dotfiles/bin:$HOME/.cargo/bin:$PATH"
+  export PATH="$PATH:/usr/local/sbin" # wasn't set, but something from homebrew puts executables there
   export BAT_THEME=TwoDark # https://github.com/sharkdp/bat
 
 # tab completion

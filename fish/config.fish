@@ -76,8 +76,8 @@ if test -d "$HOME/golang"
 end
 
 # My custom executables
-maybe_prepend_path $HOME/code/dotfiles/bin  # executables in dotfiles
-maybe_prepend_path $HOME/bin                # overrides from this machine
+maybe_prepend_path $HOME/Desktop/Marissa/Projects/dotfiles/bin # executables in dotfiles
+maybe_prepend_path $HOME/bin                                   # overrides from this machine
 
 # Rails cucumber integration looks for this env var to decide how to display output
 set --export CUCUMBER_FORMAT pretty
