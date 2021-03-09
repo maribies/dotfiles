@@ -2,6 +2,7 @@
   username         = maribies
 	name             = Marissa Biescker
 	email            = marissa.biesecker@gmail.com
+  signingkey       = 88DD6EE54D819D87
 [color]
   ui               = true
 [color "diff"]
@@ -39,7 +40,7 @@
     hist     = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
 
   # commit with a wip message
-    wip      = git commit -am"WIP"
+    wip      = commit -am"WIP"
   # undo last commit (hopefully which was a wip)
     unwip-s  = reset --soft HEAD^ #keeps changes in staging
     unwip    = reset HEAD^
