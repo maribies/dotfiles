@@ -3,6 +3,8 @@
 	name             = Marissa Biescker
 	email            = marissa.biesecker@gmail.com
   signingkey       = 88DD6EE54D819D87
+[commit]
+  gpgsign          = true
 [color]
   ui               = true
 [color "diff"]
