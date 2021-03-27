@@ -6,7 +6,6 @@ fi
   export EDITOR='code --wait'
   export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
   export PATH="$HOME/.nvm/versions/node/v10.13.0/bin:$PATH"
-  export PATH="$HOME/.rbenv/shims:$PATH"
   export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
   export PATH="$HOME/bin:$HOME/Desktop/Marissa/Projects/dotfiles/bin:$HOME/.cargo/bin:$PATH"
   export PATH="$PATH:/usr/local/sbin" # wasn't set, but something from homebrew puts executables there
@@ -157,4 +156,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(rbenv init -)"
+# Switch between ruby versions with `chruby` (use `ruby-install` to install new ones)
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
