@@ -84,3 +84,5 @@
   # Git objects (for low-level exploration of git objects)
     type     = cat-file -t
     dump     = cat-file -p
+[init]
+	defaultBranch = main
